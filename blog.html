@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog assignment</title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "sidebar-main main sidebar-right"
+        "footer footer footer";
+        gap: 15px;
+        padding: 20px;
+        background-color: #f4f4f9;
+
+    }
+    .header{
+        grid-area:header;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .nav{
+        grid-area:nav;
+        background-color:#555;
+        color: white;
+        padding: 15px;
+        text-align: center;
+
+    }
+    .sidebar-main{
+        grid-area: sidebar-main;
+        background-color: #f0e68f;
+        padding: 20px;
+    }
+    .main{
+        grid-area: main;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    .sidebar-right{
+        grid-area: sidebar-right;
+        background-color: #add86e;
+        padding: 20px;
+        
+
+    }
+    .footer{
+        grid-area:footer;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    h1,h2,h3{
+        margin-top: 0;
+    }
+    p{
+        line-height: 1.6;
+    }
+    img{
+        width: 100px;
+        height: auto;
+    }
+    .blog-image{
+        width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <h1> my awesome blog</h1>
+            <p> sharing thoughts, stories, ideas</p>
+        </header>
+    
+    <!-- navigation bar-->
+     <nav class="nav">
+        <a href="#home" style="color: white; margin-right: 20px;">home</a>
+        <a href="#about" style="color: white; margin-right: 20px;">about</a>
+        <a href="#contact" style="color: white;">contact</a>
+     </nav>
+     <!--sidebar-->
+     <aside class="sidebar-main">
+        <h3>popular posts</h3>
+        <ul>
+            <li><a href="#">how to start a blog</a></li>
+            <li><a href="#">top 10 travel destination</a></li>
+            <li><a href="#">tios for healthy living</a></li>
+        </ul>
+     </aside>
+     <!--main content-->
+     <main class="main">
+        <h2>exploring the beauty of nature</h2>
+        <img src="nature.2.jpg"alt="nature " class="blog-image">
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque enim quia aliquam cum et veniam voluptatum nostrum minima excepturi? Quos at optio sit aliquam possimus officia magni voluptas, necessitatibus omnis eius sed deserunt cumque, doloribus dolores blanditiis iure libero in nisi! Non exercitationem perspiciatis quos, iste harum distinctio fugiat? Quam quaerat explicabo distinctio delectus maxime est, inventore corporis eum rem incidunt voluptate neque? Assumenda iusto eum quae architecto quibusdam nam, perferendis suscipit magnam labore, maiores officiis cum? Placeat ex aliquam magni excepturi harum ipsa neque a magnam velit, voluptatibus aspernatur distinctio, voluptas ullam officia natus atque culpa ea recusandae fuga.</p>
+        <img src="nature.1.avif"alt="nature"class="blog-image">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam ratione consectetur, a nobis beatae esse reiciendis sint ullam aliquid rem voluptate. Iure, iusto atque temporibus iste delectus saepe similique asperiores corporis reiciendis accusamus odio ab laudantium a quis earum quae nobis repellat molestiae cum quaerat laboriosam nulla. Vel mollitia ducimus, alias quibusdam culpa obcaecati quos facilis, praesentium fugit earum corrupti consectetur in, molestiae iure debitis? Quae perspiciatis consequuntur aperiam ipsum odio, illo quos nesciunt repellendus nobis mollitia omnis, ipsa adipisci, similique harum amet distinctio tempora. Maiores, libero deserunt porro iste magnam at, sit placeat, illo eum quos molestiae nesciunt eaque?</p>
+     </main>
+     <!--right sidebar-->
+     <aside class="sidebar-right">
+        <h3>about the author</h3>
+        <img src="nature.3.jpg" alt="author" style="border-radius: 50%;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis at incidunt minus laborum. Temporibus enim, explicabo ipsum distinctio repellat asperiores placeat quia molestias inventore vel porro quo suscipit recusandae voluptatum architecto laboriosam a quaerat fugit adipisci commodi corrupti consectetur maxime accusantium id? Voluptatum nisi ad dolorem inventore aperiam enim obcaecati temporibus possimus adipisci perferendis numquam quia dolore repudiandae sapiente, repellat eligendi deleniti iste, repellendus vel. Modi eos quidem inventore! Beatae nihil soluta dolorem recusandae aut eligendi blanditiis magnam! Consequuntur et modi dicta officia expedita officiis, aperiam provident illo delectus eaque esse, distinctio pariatur repellendus ipsum deleniti unde sequi inventore?</p>
+
+     </aside>
+     <!--footer-->
+     <footer class="footer">
+        <p>&copy;2024 my awesome blog\ all  rights reserved</p>
+     </footer>
+    </div>
+    
+</body>
+</html>
